@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* ----------------Barra de navegacion--------------- */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 10%;
+    overflow: hidden;
+    position: fixed;
+    font-size: 20px;
+    top: 0;
+    width: 100%;
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.0);
+    font-weight: bold;
+}
+
+li {
+    float: left;
+    width: 25%;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* ----------------Header--------------- */
+
+.header {
+    float: left;
+    text-align: center;
+    background-image: url("../img/Fondo1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: initial;
+    font-size: 50px;
+    color: white;
+}
+
+.header h1 {
+    padding-right: 50%;
+    padding-bottom: 30px;
+    padding-left: 7%;
+}
+
+
+/* --------------Columnas----------------- */
+
+.one-column {
+    float: left;
+    width: 100%;
+}
+
+.one-column h2 {
+    padding: 3%;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 0;
+}
+
+.one-column h3 {
+    padding: 3%;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 0;
+}
+
+.one-column p {
+    font-size: 30px;
+    text-align: center;
+    padding: 0% 5%;
+}
+
+.two-column {
+    float: left;
+    width: 50%;
+    padding-top: 5%;
+}
+
+.two-column iframe {
+    width: 100%;
+    height: 95vh;
+}
+
+.two-column img {
+    width: 100%;
+    height: 95vh;
+}
+
+.two-column h2 {
+    padding: 3%;
+    font-size: 30px;
+    text-align: center;
+    font-weight: 0;
+}
+
+.four-column {
+    padding: 2%;
+    float: left;
+    width: 25%;
+}
+
+.four-column img {
+    width: 100%;
+}
+
+.four-column p {
+    text-align: center;
+}
+
+
+/* ---------------Contador---------------- */
+
+.ax {
+    text-align: center;
+    padding-bottom: 10%;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+ex {
+    display: inline-block;
+    font-size: 1.5em;
+    list-style-type: none;
+    padding: 1em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+ex span {
+    display: block;
+    font-size: 4.5rem;
+}
+
+
+/* ---------------Fondos---------------- */
+
+#Fondo1 {
+    background: rgb(107, 101, 101);
+    background: linear-gradient(180deg, rgb(107, 101, 101, 1) 0%, rgb(14, 189, 224) 100%);
+}
+
+#Fondo2 {
+    background: rgb(14, 189, 224);
+    background: linear-gradient(180deg, rgb(14, 189, 224, 1) 0%, rgb(107, 101, 101) 100%);
+}
+
+
+/* ---------------Preloader---------------- */
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.main-circle {
+    width: 150px;
+    height: 150px;
+    border: 4px solid blue;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    position: relative;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 2s infinite;
+}
+
+.main-circle:before {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    content: '';
+    border: 4px solid transparent;
+    border-right: 4px solid blue;
+    transform: rotate(40deg);
+    border-radius: 50%;
+}
+
+.green-circle {
+    animation: rotate 2s infinite .4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    border: 4px solid blue;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transform: rotate(-20deg);
+    border-radius: 50%;
+    position: relative;
+}
+
+.green-circle:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    border: 4px solid transparent;
+    border-right: 4px solid blue;
+    transform: rotate(60deg);
+}
+
+.brown-circle {
+    animation: rotate 2s infinite .6s;
+    width: 80px;
+    height: 80px;
+    border: 4px solid blue;
+    border-top: 4px solid transparent;
+    border-right: 4px solid transparent;
+    transform: rotate(-20deg);
+    border-radius: 50%;
+}
+
+@keyframes rotate {
+    from {}
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* ---------------Secciones---------------- */
+
+#Inicio {}
+
+#Fecha {}
+
+#Mapa {}
+
+#Galeria {}
+
+
+/* ---------------Otros---------------- */
+
+@media screen and (max-width:700px) {
+    .one-column {}
+    .two-column {}
+}
