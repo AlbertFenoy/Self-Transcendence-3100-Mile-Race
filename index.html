@@ -7,91 +7,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="shortcut icon" href="img/Icon.ico">
     <script src="js/java.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 
 <body>
+    <!---------------------------Barra de navegacion--------------------------------->
     <ul id="nav">
         <li><a href="#Inicio">Inicio</a></li>
         <li><a href="#Fecha">Fecha</a></li>
         <li><a href="#Mapa">Mapa</a></li>
+        <li><a href="#Ganadores">Ganadores</a></li>
         <li><a href="#Galeria">Galeria</a></li>
     </ul>
-
-    <div class="header" id="Inicio">
-        <h1>Self-Transcendence 3100 Mile Race</h1>
-    </div>
-    <div class="one-column" id="Fondo1">
-        <h2>SOBRE EL EVENTO</h2>
-        <p>Del 13 de septiembre al 3 de noviembre, se llevó a cabo la carrera Sri Chinmoy Self-Transcendence 3100 Mile Race en una nueva ubicación, en Salzburgo, Austria. Sobre la base de consultas con expertos locales, hicimos una serie de modificaciones
-            para cumplir estrictamente con los estándares de salud locales.</p>
-        </p>
-        <h3>La carrera</h3>
-        <p>Los atletas pueden probarse a sí mismos en un formato diferente a cualquier otro evento de ultramaratón. Para cumplir su objetivo de 3100 millas (4989 km) en 52 días, deben registrar un promedio de 59,6 millas (95,9 km) por día. Los corredores
-            comienzan a las 6 a.m. y corren durante períodos prolongados durante el día, tomando descansos según sea necesario. Si lo desean, pueden continuar hasta las 12 de la medianoche cuando el curso cierra por la noche. Después de completar la carrera,
-            los corredores tienen la opción de continuar para completar 5000 km.</p>
-        </p>
-    </div>
-    <div class="one-column" id="Fondo2">
-        <div class="one-column">
-            <h2><u>Tiempo hasta el próximo maratón</u></h2>
-        </div>
-        <div class="ax" id="Fecha">
-            <ex><span id="days"></span>Dias</ex>
-            <ex><span id="hours"></span>horas</ex>
-            <ex><span id="minutes"></span>Minutos</ex>
-            <ex><span id="seconds"></span>Segundos</ex>
-            <div>
-                <div>
-                    <button class="button"><a href="docs/Panfleto.pdf">Panfleto </a></button>
+    <div id="Fondo">
+        <!---------------------------Header--------------------------------->
+        <div class="row">
+            <div class="header" id="Inicio">
+                <h1>Self-Transcendence 3100 Mile Race</h1>
+            </div>
+            <div class="one-column">
+                <h2>SOBRE EL EVENTO</h2>
+                <p>Del 13 de septiembre al 3 de noviembre, se llevó a cabo la carrera Sri Chinmoy Self-Transcendence 3100 Mile Race en una nueva ubicación, en Salzburgo, Austria. Sobre la base de consultas con expertos locales, hicimos una serie de modificaciones
+                    para cumplir estrictamente con los estándares de salud locales.</p>
+                </p>
+                <h3>La carrera</h3>
+                <p>Los atletas pueden probarse a sí mismos en un formato diferente a cualquier otro evento de ultramaratón. Para cumplir su objetivo de 3100 millas (4989 km) en 52 días, deben registrar un promedio de 59,6 millas (95,9 km) por día. Los corredores
+                    comienzan a las 6 a.m. y corren durante períodos prolongados durante el día, tomando descansos según sea necesario. Si lo desean, pueden continuar hasta las 12 de la medianoche cuando el curso cierra por la noche. Después de completar
+                    la carrera, los corredores tienen la opción de continuar para completar 5000 km.</p>
+                </p>
+            </div>
+            <div class="one-column">
+                <div class="one-column">
+                    <h2><u>Tiempo hasta el próximo maratón</u></h2>
+                </div>
+                <div class="ax" id="Fecha">
+                    <ex><span id="days"></span>Dias</ex>
+                    <ex><span id="hours"></span>horas</ex>
+                    <ex><span id="minutes"></span>Minutos</ex>
+                    <ex><span id="seconds"></span>Segundos</ex>
+                    <div>
+                        <div>
+                            <button class="button"><a href="docs/Panfleto.pdf">Panfleto </a></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="one-column" id="Mapa">
-            <div>
-                <h2><u>Mapa</u></h2>
-                <p>Aquí podeis ver el recorrido que se hará y la localización con un mapa interactivo.</p>
+        <!---------------------------Mapa--------------------------------->
+        <div class="row">
+            <div class="one-column" id="Mapa">
+                <div>
+                    <h2><u>Mapa</u></h2>
+                    <p>Aquí podeis ver el recorrido que se hará y la localización con un mapa interactivo.</p>
+                </div>
+                <div class="two-column">
+                    <h2>El recorrido</h2>
+                    <img src="img/recorrido.png">
+                </div>
+                <div class="two-column">
+                    <h2>El Mapa interactivo</h2>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.0967777463575!2d-73.80104882971375!3d40.71588599258629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzU3LjIiTiA3M8KwNDcnNTkuMSJX!5e0!3m2!1sen!2ses!4v1607595770449!5m2!1sen!2ses"
+                        frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
             </div>
-            <div class="two-column">
-                <h2>El recorrido</h2>
-                <img src="img/recorrido.png">
+        </div>
+        <!---------------------------Ganadores--------------------------------->
+        <div class="row">
+            <div class="one-column" id=Ganadores>
+                <h2><u>Ganadores</u></h2>
             </div>
-            <div class="two-column">
-                <h2>El Mapa interactivo</h2>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.0967777463575!2d-73.80104882971375!3d40.71588599258629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQyJzU3LjIiTiA3M8KwNDcnNTkuMSJX!5e0!3m2!1sen!2ses!4v1607595770449!5m2!1sen!2ses"
-                    frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <div class="one-column">
+                <table id="customers">
+                    <tr>
+                        <th>Año</th>
+                        <th>Atleta</th>
+                        <th>Pais</th>
+                        <th>Tiempo <br>(D, H, Min y S)</br>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td>1997</td>
+                        <td>Edward Kelley</td>
+                        <td>Estados Unidos</td>
+                        <td>47:15:19:56</td>
+                    </tr>
+                    <tr>
+                        <td>2005</td>
+                        <td>Srdjan Stojanovich</td>
+                        <td>Serbia</td>
+                        <td>46:10:51:16</td>
+                    </tr>
+                    <tr>
+                        <td>2015</td>
+                        <td>Ashprihanal Aalto</td>
+                        <td>Finlandia</td>
+                        <td>40:09:06:21</td>
+                    </tr>
+                    <tr>
+                        <td>2020</td>
+                        <td>Andrea Marcato</td>
+                        <td>Italia</td>
+                        <td>43:12:07:26</td>
+                    </tr>
+                </table>
             </div>
+        </div>
+        <!---------------------------Galeria--------------------------------->
+        <div class="row">
             <div class="one-column" id="Galeria">
-                <div>
-                    <h2><u>Galeria</u></h2>
-                    <div class="gallery">
-                        <a target="_blank" href="img/Img1.jpg">
-                            <img src="img/Img1.jpg">
-                        </a>
-                    </div>
-                    <div class="gallery">
-                        <a target="_blank" href="img/Img2.jpg">
-                            <img src="img/Img2.jpg">
-                        </a>
-                    </div>
-                    <div class="gallery">
-                        <a target="_blank" href="img/Img3.jpg">
-                            <img src="img/Img3.jpg">
-                        </a>
-                    </div>
-                    <div class="gallery">
-                        <a target="_blank" href="img/Img4.jpg">
-                            <img src="img/Img4.jpg">
-                        </a>
-                    </div>
-                </div>
+                <h2><u>Galeria</u></h2>
+            </div>
+            <div class="gallery">
+                <a href="img/Img1.jpg"><img src="img/Img1.jpg">
+                </a>
+            </div>
+            <div class="gallery">
+                <a href="img/Img2.jpg">
+                    <img src="img/Img2.jpg">
+                </a>
+            </div>
+            <div class="gallery">
+                <a href="img/Img3.jpg">
+                    <img src="img/Img3.jpg">
+                </a>
+            </div>
+            <div class="gallery">
+                <a href="img/Img4.jpg">
+                    <img src="img/Img4.jpg">
+                </a>
+            </div>
+        </div>
+        <!---------------------------Video Promocionado--------------------------------->
+        <div class="row">
+            <div class="one-column">
+                <h2>Redes Sociales</h2>
+            </div>
+            <div class="two-column galler">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/gfmu7_lNQQY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe src="https://discord.com/widget?id=788790525569794128&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+        </div>
+        <div class="row one-column">
+            <div id="footer">
+                <p>©Sri Chinmoy</p>
+            </div>
+            <div class="row centro">
             </div>
         </div>
     </div>
-    </div>
-
 
 </body>
 
