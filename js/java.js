@@ -1,6 +1,3 @@
-window.onload = function() {
-    $('#Onload').fadeOut();
-};
 (function() {
     const second = 1000,
         minute = second * 60,
